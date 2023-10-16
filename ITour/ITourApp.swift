@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct ITourApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+    .modelContainer(for: Destination.self)
+  }
 }
