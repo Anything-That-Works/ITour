@@ -12,10 +12,7 @@ struct DestinationListingView: View {
   //MARK: Variable Defination
   @Query var destinations: [Destination]
   @Environment(\.modelContext) var moc
-  init(sort: SortDescriptor<Destination>) {
-    _destinations = Query(sort: [sort], animation: .bouncy)
-  }
-  
+
   //MARK: View
   var body: some View {
     List {
@@ -38,8 +35,25 @@ struct DestinationListingView: View {
       moc.delete(destination)
     }
   }
+  
+  init(sort: SortDescriptor<Destination>, searchString: String) {
+//    MARK: Default init
+//    _destinations = Query(sort: [sort])
+//    MARK: with HardCoded filter Predicate
+//    _destinations = Query(filter: #Predicate{$0.priority > 1},sort: [sort])
+//    MARK: with Search filter
+    
+    _destinations = Query(filter: #Predicate{
+      if searchString.isEmpty {
+        return true
+      } else {
+        return $0.name.localizedStandardContains(searchString)
+      }
+    },sort: [sort])
+  }
 }
 
 #Preview {
-  DestinationListingView(sort: SortDescriptor(\Destination.name))
+  DestinationListingView(sort: SortDescriptor(\Destination.date), searchString: "")
+    .modelContainer(previewContainer)
 }

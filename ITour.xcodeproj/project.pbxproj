@@ -14,6 +14,8 @@
 		0573C39F2ADCBF4300287FCC /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C39E2ADCBF4300287FCC /* Destination.swift */; };
 		0573C3A12ADCC51400287FCC /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3A02ADCC51400287FCC /* EditDestinationView.swift */; };
 		0573C3A32ADCCD8100287FCC /* DestinationListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3A22ADCCD8100287FCC /* DestinationListingView.swift */; };
+		0573C3A72ADCF01200287FCC /* previewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3A62ADCF01200287FCC /* previewContainer.swift */; };
+		0573C3A92ADD001100287FCC /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3A82ADD001100287FCC /* Sight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0573C39E2ADCBF4300287FCC /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		0573C3A02ADCC51400287FCC /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 		0573C3A22ADCCD8100287FCC /* DestinationListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListingView.swift; sourceTree = "<group>"; };
+		0573C3A62ADCF01200287FCC /* previewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previewContainer.swift; sourceTree = "<group>"; };
+		0573C3A82ADD001100287FCC /* Sight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				0573C3902ADCBEFF00287FCC /* ITourApp.swift */,
 				0573C3942ADCBF0100287FCC /* Assets.xcassets */,
 				0573C3962ADCBF0100287FCC /* Preview Content */,
+				0573C3A62ADCF01200287FCC /* previewContainer.swift */,
 			);
 			path = ITour;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0573C39E2ADCBF4300287FCC /* Destination.swift */,
+				0573C3A82ADD001100287FCC /* Sight.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 				0573C3912ADCBEFF00287FCC /* ITourApp.swift in Sources */,
 				0573C39F2ADCBF4300287FCC /* Destination.swift in Sources */,
 				0573C3A12ADCC51400287FCC /* EditDestinationView.swift in Sources */,
+				0573C3A92ADD001100287FCC /* Sight.swift in Sources */,
+				0573C3A72ADCF01200287FCC /* previewContainer.swift in Sources */,
 				0573C3A32ADCCD8100287FCC /* DestinationListingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
